@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pixel Art Maker!</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>pixel art maker</h1>
+    <div class="formContainer">
+      <span>Move sliders to create canvas</span>
+      <form id="sizePicker">
+        Height:
+        <input type="range" id="input_height" class="slider" name="height" min="10" max="50" value="10" step="5"> Width:
+        <input type="range" id="input_width" class="slider" name="width" min="10" max="50" value="10" step="5">
+      </form>
+      <div>
+        <p id="p1">Value: <span id="val1"></span></p>
+        <p id="p2">Value: <span id="val2"></span></p>
+      </div>
+    </div>
+  </header>
+
+  <h2>Pick A Color</h2>
+  <input type="color" id="colorPicker" value="#FFFF00">
+  <div>
+    <button id="clearColor" type="button" name="button">Clear Colors</button>
+    <button id="fillColor" type="button" name="button">Fill Canvas</button>
+    <button id="clearCanvas" type="button" name="button">Clear Canvas</button>
+  </div>
+
+  <h2>Design Canvas</h2>
+  <table id="pixel_canvas"></table>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
